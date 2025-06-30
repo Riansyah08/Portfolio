@@ -12,18 +12,21 @@ export default function Home() {
     window.scrollTo(0, 0);
   }, []);
 
-if (window.innerWidth < 640) {
-      // On mobile, set all sections to be visible immediately
-      setIsVisible({
-        home: true,
-        about: true,
-        experience: true,
-        certificates: tru       // Your section ID is "additionalcertificates", not "additionals"
-        additionalcertificates: true, 
-        skills: true,
-      });
-      return; // The return is now fine because we've handled all sections.
-  }
+useEffect(() => {
+  window.scrollTo(0, 0);
+
+  // Always set all sections as visible
+  setIsVisible({
+    home: true,
+    about: true,
+    experience: true,
+    certificates: true,
+    additionalcertificates: true,
+    skills: true,
+  });
+
+  // No need for IntersectionObserver anymore
+}, []);
 
   return (
     <div className="bg-gradient-to-br from-gray-50 via-white to-blue-50 dark:from-gray-900 dark:via-gray-800 dark:to-blue-900 min-h-screen">
