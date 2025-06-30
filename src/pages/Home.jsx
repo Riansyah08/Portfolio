@@ -12,29 +12,18 @@ export default function Home() {
     window.scrollTo(0, 0);
   }, []);
 
-useEffect(() => {
-    if (window.innerWidth < 640) { // This part runs on mobile
-      setIsVisible(prev => ({
-        ...prev,
-        certificates: true,
-        additionals: true
-      }));
-      return; // <-- THIS IS THE PROBLEM
-    }
-
-    // This part is for desktop, but is NEVER reached on mobile
-    const observer = new IntersectionObserver(
-      (entries) => {
-        // ... code to set sections visible on scroll
-      },
-      { threshold: 0.1 }
-    );
-
-    const sections = document.querySelectorAll('[data-section]');
-    sections.forEach((section) => observer.observe(section));
-
-    return () => observer.disconnect();
-  }, []);
+if (window.innerWidth < 640) {
+      // On mobile, set all sections to be visible immediately
+      setIsVisible({
+        home: true,
+        about: true,
+        experience: true,
+        certificates: tru       // Your section ID is "additionalcertificates", not "additionals"
+        additionalcertificates: true, 
+        skills: true,
+      });
+      return; // The return is now fine because we've handled all sections.
+  }
 
   return (
     <div className="bg-gradient-to-br from-gray-50 via-white to-blue-50 dark:from-gray-900 dark:via-gray-800 dark:to-blue-900 min-h-screen">
