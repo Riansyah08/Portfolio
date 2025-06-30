@@ -45,7 +45,7 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="bg-gradient-to-br from-gray-50 via-white to-blue-50 dark:from-gray-900 dark:via-gray-800 dark:to-blue-900 min-h-screen max-w-7xl mx-auto">
+    <div className="max-w-7xl mx-auto">
       
       {/* Hero Section */}
       <section 
