@@ -210,7 +210,7 @@ useEffect(() => {
                   </div>
                   <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3">Looking for Internship Opportunity</h3>
                   <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
-                    Actively seeking internship opportunities in AI Development, Software Development, or 
+                    Actively seeking internship opportunities in AI Development, Web Development, or 
                     related fields to enhance my technical skills and gain real-world industry experience.
                   </p>
                 </div>
