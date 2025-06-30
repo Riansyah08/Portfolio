@@ -15,11 +15,13 @@ useEffect(() => {
 useEffect(() => {
   // Pre-show certificates and additionals on mobile
   if (window.innerWidth < 640) {
-    setIsVisible(prev => ({
-      ...prev,
-      certificates: true,
-      additionals: true
-    }));
+    setTimeout(() => {
+      setIsVisible(prev => ({
+        ...prev,
+        certificates: true,
+        additionals: true
+      }));
+    }, 100); // Short delay allows the browser to render initial hidden state
   }
 
   const observer = new IntersectionObserver(
