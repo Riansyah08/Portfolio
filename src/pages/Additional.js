@@ -1,0 +1,36 @@
+export const additionals = [
+  // YOT Leadership Program
+  {
+    image: "./img/E-Certificate_page-0001.jpg",
+    title: "Young On Top Leadership Program",
+    website: "https://drive.google.com/file/d/1KCQg5WAMGUBXxK0Amf6F0ylJurYHAuXV/view?usp=sharing"
+  },
+
+  // DET
+  {
+    image: "./img/Duolingo English Test_page-0001.jpg",
+    title: "DDuolingo English Test",
+    website: "https://drive.google.com/file/d/1MR5t5rJqJQULrVDFsZ_K8B73Aec13nUF/view?usp=sharing"
+  },
+  
+    // TOEFL ITP
+  {
+    image: "./img/MUHAMMAD RIYANSYAH AFANDI - TOEFL ITP_page-0003.jpg",
+    title: "TOEFL ITP",
+    website: "https://drive.google.com/file/d/12QdClDIqFglaRF5gKLpbba-usG-i-jbs/view?usp=sharing"
+  },
+
+  // Canva Certificate
+  {
+    image: "./img/Muhammad Riyansyah Afandi - 3-Day Masterclass From Canva to Ca$hflow Design your way to Remote Income.png",
+    title: "3-Day Masterclass From Canva to Ca$hflow (SGBVA)",
+    website: "https://drive.google.com/file/d/1aEw1pdwtmxHvJOszICUcxl2PRfB7NV6T/view?usp=sharing"
+  },
+
+    // Mini Bootcamp Microsoft Excel
+  {
+    image: "./img/Muhammad Riyansyah Afandi - Mini Bootcamp Microsoft Excel Mengenal Pivot Table_page-0001.jpg",
+    title: "Mini Bootcamp Microsoft Excel (Edspert.id)",
+    website: "https://drive.google.com/file/d/13U185YkQXs0du8lt3UgJRFI6K_rJcXhq/view?usp=sharing"
+  }
+]
