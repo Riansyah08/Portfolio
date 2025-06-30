@@ -8,25 +8,42 @@ export default function Home() {
   const [activeSection, setActiveSection] = useState('home');
   const [isVisible, setIsVisible] = useState({});
 
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
-
 useEffect(() => {
   window.scrollTo(0, 0);
-
-  // Always set all sections as visible
-  setIsVisible({
-    home: true,
-    about: true,
-    experience: true,
-    certificates: true,
-    additionalcertificates: true,
-    skills: true,
-  });
-
-  // No need for IntersectionObserver anymore
 }, []);
+
+useEffect(() => {
+  // Pre-show certificates and additionals on mobile
+  if (window.innerWidth < 640) {
+    setIsVisible(prev => ({
+      ...prev,
+      certificates: true,
+      additionals: true
+    }));
+  }
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        setIsVisible(prev => ({
+          ...prev,
+          [entry.target.id]: entry.isIntersecting || prev[entry.target.id] // Preserve manual true for mobile
+        }));
+
+        if (entry.isIntersecting) {
+          setActiveSection(entry.target.id);
+        }
+      });
+    },
+    { threshold: 0.1 }
+  );
+
+  const sections = document.querySelectorAll('[data-section]');
+  sections.forEach((section) => observer.observe(section));
+
+  return () => observer.disconnect();
+}, []);
+
 
   return (
     <div className="bg-gradient-to-br from-gray-50 via-white to-blue-50 dark:from-gray-900 dark:via-gray-800 dark:to-blue-900 min-h-screen">
