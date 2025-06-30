@@ -39,5 +39,12 @@ export const additionals = [
     image: "./img/Puma It SDC Vice_page-0001.jpg",
     title: "PUMA IT, Vice of Student Development and Competition",
     website: "https://drive.google.com/file/d/1KgrrERkdCAPytOnWXlWt6irtC5AWbroP/view?usp=sharing"
+  },
+
+  // PUMA IT
+  {
+    image: "./img/Certificate Of Appreciation As a Finalist in the Eco Surv Exh Comp 2024 Category of Application.jpg",
+    title: "2nd Winner, Economic Survival Competition 2024 Category Application",
+    website: "https://drive.google.com/file/d/1iNBlurDblva94zcyR6FeEmB9XQN_o88U/view?usp=sharing"
   }
 ]
