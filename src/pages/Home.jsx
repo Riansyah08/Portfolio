@@ -12,37 +12,29 @@ export default function Home() {
     window.scrollTo(0, 0);
   }, []);
 
-  useEffect(() => {
-    if (window.innerWidth < 640) {
-      setIsVisible(prev => ({
-        ...prev,
-        certificates: true,
-        additionals: true
-      }));
-      return;
-    }
+useEffect(() => {
+    if (window.innerWidth < 640) { // This part runs on mobile
+      setIsVisible(prev => ({
+        ...prev,
+        certificates: true,
+        additionals: true
+      }));
+      return; // <-- THIS IS THE PROBLEM
+    }
 
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          setIsVisible(prev => ({
-            ...prev,
-            [entry.target.id]: entry.isIntersecting
-          }));
+    // This part is for desktop, but is NEVER reached on mobile
+    const observer = new IntersectionObserver(
+      (entries) => {
+        // ... code to set sections visible on scroll
+      },
+      { threshold: 0.1 }
+    );
 
-          if (entry.isIntersecting) {
-            setActiveSection(entry.target.id);
-          }
-        });
-      },
-      { threshold: 0.1 }
-    );
+    const sections = document.querySelectorAll('[data-section]');
+    sections.forEach((section) => observer.observe(section));
 
-    const sections = document.querySelectorAll('[data-section]');
-    sections.forEach((section) => observer.observe(section));
-
-    return () => observer.disconnect();
-  }, []);
+    return () => observer.disconnect();
+  }, []);
 
   return (
     <div className="bg-gradient-to-br from-gray-50 via-white to-blue-50 dark:from-gray-900 dark:via-gray-800 dark:to-blue-900 min-h-screen">
