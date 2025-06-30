@@ -51,7 +51,7 @@ export default function Home() {
       <section 
         id="home" 
         data-section 
-        className="min-h-screen flex flex-col justify-center items-center text-center px-4 pt-24 relative overflow-hidden"
+        className="flex flex-col justify-center items-center text-center px-4 pt-24 sm:pt-32 lg:pt-40 pb-20 relative overflow-hidden min-h-[calc(100vh-4rem)] sm:min-h-[calc(100vh-5rem)] lg:min-h-[calc(100vh-6rem)]"
       >
         {/* Animated Background */}
         <div className="absolute inset-0 overflow-hidden">
