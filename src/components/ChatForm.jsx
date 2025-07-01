@@ -56,7 +56,7 @@ const ChatForm = ({ chatHistory, setChatHistory, generateBotResponse }) => {
           disabled:cursor-not-allowed disabled:hover:shadow-none"
       >
         {isLoading ? (
-          <div className="w-4 h-4 border-2 border-white border-t-transparent rounded-full animate-spin bottom-1"></div>
+          <div className="w-4 h-4 border-2 border-white border-t-transparent rounded-full animate-spin"></div>
         ) : (
           <span className="material-symbols-rounded text-lg">send</span>
         )}
