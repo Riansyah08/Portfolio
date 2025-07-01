@@ -218,6 +218,26 @@ useEffect(() => {
 
               {/* Experience Item 2 */}
               <div className="relative flex items-start gap-8">
+                <div className="flex-shrink-0 w-16 h-16 bg-gradient-to-br from-purple-500 to-purple-600 rounded-full flex items-center justify-center shadow-lg">
+                  <User className="w-8 h-8 text-white" />
+                </div>
+                <div className="flex-grow bg-white dark:bg-gray-800 p-8 rounded-2xl shadow-lg border border-gray-200 dark:border-gray-700">
+                  <div className="flex items-center gap-3 mb-4">
+                    <span className="text-sm font-medium text-gray-600 dark:text-gray-400">October 2024 - Present</span>
+                    <span className="px-3 py-1 bg-green-100 dark:bg-green-900/30 text-green-800 dark:text-green-300 text-xs font-medium rounded-full">
+                      Active
+                    </span>
+                  </div>
+                  <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3">President University Computer and Technology Enthusiast Club, Head of External Division</h3>
+                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
+                    Managed external partnerships and represented the organization in technology-related events.
+                    Coordinated collaborations with other institutions and communities to expand opportunities for members and promote knowledge sharing.
+                  </p>
+                </div>
+              </div>
+
+              {/* Experience Item 3 */}
+              <div className="relative flex items-start gap-8">
                 <div className="flex-shrink-0 w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-full flex items-center justify-center shadow-lg">
                   <Brain className="w-8 h-8 text-white" />
                 </div>
@@ -228,23 +248,6 @@ useEffect(() => {
                   <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3">PT Mattel Indonesia, AI Developer (Academic Collaboration)</h3>
                   <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
                     Developed an AI-based defect detection and root cause analysis system as part of a final university project in collaboration with PT Mattel Indonesia.
-                  </p>
-                </div>
-              </div>
-
-              {/* Experience Item 3 */}
-              <div className="relative flex items-start gap-8">
-                <div className="flex-shrink-0 w-16 h-16 bg-gradient-to-br from-purple-500 to-purple-600 rounded-full flex items-center justify-center shadow-lg">
-                  <User className="w-8 h-8 text-white" />
-                </div>
-                <div className="flex-grow bg-white dark:bg-gray-800 p-8 rounded-2xl shadow-lg border border-gray-200 dark:border-gray-700">
-                  <div className="flex items-center gap-3 mb-4">
-                    <span className="text-sm font-medium text-gray-600 dark:text-gray-400">October 2024 - September 2025</span>
-                  </div>
-                  <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3">President University Computer and Technology Enthusiast Club, Head of External Division</h3>
-                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
-                    Managed external partnerships and represented the organization in technology-related events.
-                    Coordinated collaborations with other institutions and communities to expand opportunities for members and promote knowledge sharing.
                   </p>
                 </div>
               </div>
