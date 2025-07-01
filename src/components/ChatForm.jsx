@@ -27,7 +27,7 @@ const Chatform = ({ chatHistory, setChatHistory, generateBotResponse }) => {
               setMessage(e.target.value);
             }
           }}
-          placeholder="Ask me anything about IT, AI, coding..."
+          placeholder="Ask me anything..."
           className="w-full px-4 py-3 pr-12 bg-slate-50 dark:bg-slate-700 border border-slate-200 dark:border-slate-600 
             rounded-xl resize-none text-sm placeholder-slate-400 dark:placeholder-slate-500 
             focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent
