@@ -33,6 +33,7 @@ export default function App() {
       lastUserMessage.includes("about yourself") ||
       lastUserMessage.includes("tell me about him") ||
       lastUserMessage.includes("who is riyansyah") ||
+      lastUserMessage.includes("who is he") ||
       lastUserMessage.includes("applicant") ||
       lastUserMessage.includes("biodata") ||
       lastUserMessage.includes("Biodata") ||
