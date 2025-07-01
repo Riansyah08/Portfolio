@@ -6,7 +6,7 @@ import Home from "./pages/Home";
 import Projects from "./project/Projects";
 import ChatbotIcon from "./components/ChatbotIcon";
 import ChatMessage from "./components/ChatMessage";
-import Chatform from "./components/Chatform";
+import ChatForm from "./components/ChatForm";
 import { MyselfInfo } from "./MyselfInfo";
 
 export default function App() {
@@ -322,7 +322,7 @@ export default function App() {
         </div>
 
         <div className="absolute bottom-0 left-0 right-0 bg-white/95 dark:bg-slate-800/95 backdrop-blur-sm border-t border-slate-200/50 dark:border-slate-700/50 p-4">
-          <Chatform
+          <ChatForm
             chatHistory={chatHistory}
             setChatHistory={setChatHistory}
             generateBotResponse={generateBotResponse}

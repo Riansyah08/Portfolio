@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const Chatform = ({ chatHistory, setChatHistory, generateBotResponse }) => {
+const ChatForm = ({ chatHistory, setChatHistory, generateBotResponse }) => {
   const [message, setMessage] = useState("");
   const [isLoading, setIsLoading] = useState(false);
 
@@ -65,4 +65,4 @@ const Chatform = ({ chatHistory, setChatHistory, generateBotResponse }) => {
   );
 };
 
-export default Chatform;
+export default ChatForm;
