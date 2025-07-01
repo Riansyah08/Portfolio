@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const ChatForm = ({ chatHistory, setChatHistory, generateBotResponse }) => {
+const Chatform = ({ chatHistory, setChatHistory, generateBotResponse }) => {
   const [message, setMessage] = useState("");
   const [isLoading, setIsLoading] = useState(false);
 
@@ -18,7 +18,7 @@ const ChatForm = ({ chatHistory, setChatHistory, generateBotResponse }) => {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="flex gap-3 items-end">
+    <form onSubmit={handleSubmit} className="flex items-center gap-2">
       <div className="flex-1 relative">
         <textarea
           value={message}
@@ -46,23 +46,23 @@ const ChatForm = ({ chatHistory, setChatHistory, generateBotResponse }) => {
         </div>
       </div>
 
-      <button
-        type="submit"
-        disabled={!message.trim() || isLoading}
-        className="flex-shrink-0 h-11 w-11 flex items-center justify-center
-          bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 
-          disabled:from-slate-300 disabled:to-slate-400 dark:disabled:from-slate-600 dark:disabled:to-slate-700
-          text-white rounded-xl transition-all duration-200 hover:shadow-lg
-          disabled:cursor-not-allowed disabled:hover:shadow-none"
-      >
-        {isLoading ? (
-          <div className="w-4 h-4 border-2 border-white border-t-transparent rounded-full animate-spin"></div>
-        ) : (
-          <span className="material-symbols-rounded text-lg">send</span>
-        )}
-      </button>
+        <button
+            type="submit"
+            disabled={!message.trim() || isLoading}
+            className="flex-shrink-0 h-11 w-11 flex items-center justify-center
+              bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 
+              disabled:from-slate-300 disabled:to-slate-400 dark:disabled:from-slate-600 dark:disabled:to-slate-700
+              text-white rounded-xl transition-all duration-200 hover:shadow-lg
+              disabled:cursor-not-allowed disabled:hover:shadow-none"
+            >     
+            {isLoading ? (
+              <div className="w-4 h-4 border-2 border-white border-t-transparent rounded-full animate-spin"></div>
+            ) : (
+              <span className="material-symbols-rounded text-lg">send</span>
+            )}
+        </button>
     </form>
   );
 };
 
-export default ChatForm;
+export default Chatform;
