@@ -8,41 +8,43 @@ export default function Home() {
   const [activeSection, setActiveSection] = useState('home');
   const [isVisible, setIsVisible] = useState({});
 
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
+useEffect(() => {
+  window.scrollTo(0, 0);
+}, []);
 
-  useEffect(() => {
-    if (window.innerWidth < 640) {
+useEffect(() => {
+  // Pre-show certificates and additionals on mobile
+  if (window.innerWidth < 640) {
+    setTimeout(() => {
       setIsVisible(prev => ({
         ...prev,
         certificates: true,
         additionals: true
       }));
-      return;
-    }
+    }, 100); // Short delay allows the browser to render initial hidden state
+  }
 
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          setIsVisible(prev => ({
-            ...prev,
-            [entry.target.id]: entry.isIntersecting
-          }));
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        setIsVisible(prev => ({
+          ...prev,
+          [entry.target.id]: entry.isIntersecting || prev[entry.target.id] // Preserve manual true for mobile
+        }));
 
-          if (entry.isIntersecting) {
-            setActiveSection(entry.target.id);
-          }
-        });
-      },
-      { threshold: 0.1 }
-    );
+        if (entry.isIntersecting) {
+          setActiveSection(entry.target.id);
+        }
+      });
+    },
+    { threshold: 0.1 }
+  );
 
-    const sections = document.querySelectorAll('[data-section]');
-    sections.forEach((section) => observer.observe(section));
+  const sections = document.querySelectorAll('[data-section]');
+  sections.forEach((section) => observer.observe(section));
 
-    return () => observer.disconnect();
-  }, []);
+  return () => observer.disconnect();
+}, []);
 
   return (
     <div className="bg-gradient-to-br from-gray-50 via-white to-blue-50 dark:from-gray-900 dark:via-gray-800 dark:to-blue-900 min-h-screen">
@@ -208,7 +210,7 @@ export default function Home() {
                   </div>
                   <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3">Looking for Internship Opportunity</h3>
                   <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
-                    Actively seeking internship opportunities in AI Development, Software Development, or 
+                    Actively seeking internship opportunities in AI Development, Web Development, or 
                     related fields to enhance my technical skills and gain real-world industry experience.
                   </p>
                 </div>

@@ -27,7 +27,7 @@ export const certificates = [
     website: "https://drive.google.com/file/d/1vs9dwZ8yTDZY5ugmsfaynyOoFqLPxaaF/view?usp=sharing"
   },
 
-    // Pelatihan Generative AI
+  // Pelatihan Generative AI
   {
     image: "./img/MUHAMMAD RIYANSYAH AFANDI - Pelatihan Generative AI for Information System_page-0001.jpg",
     title: "Pelatihan Generative AI",
