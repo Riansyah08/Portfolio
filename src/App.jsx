@@ -31,6 +31,20 @@ export default function App() {
     if (
       lastUserMessage.includes("who are you") ||
       lastUserMessage.includes("about yourself") ||
+      lastUserMessage.includes("tell me about yourself") ||
+      lastUserMessage.includes("kamu siapa")
+    ) {
+      setChatHistory((prev) => [
+        ...prev.filter((msg) => msg.text !== "Thinking..."),
+        {
+          role: "model",
+          text: `I am ${MyselfInfo.AIName}`,
+        },
+      ]);
+      return;
+    }
+
+    if (
       lastUserMessage.includes("tell me about him") ||
       lastUserMessage.includes("who is riyansyah") ||
       lastUserMessage.includes("who is he") ||
@@ -40,8 +54,9 @@ export default function App() {
       lastUserMessage.includes("siapa dia") ||
       lastUserMessage.includes("siapa riyansyah") ||
       lastUserMessage.includes("pelamar") ||
-      lastUserMessage.includes("Pelamar")
-      
+      lastUserMessage.includes("Pelamar") ||
+      lastUserMessage.includes("melamar") ||
+      lastUserMessage.includes("Melamar")
     ) {
       setChatHistory((prev) => [
         ...prev.filter((msg) => msg.text !== "Thinking..."),

@@ -1,4 +1,5 @@
 export const MyselfInfo = {
+  AIName: "RAI",
   name: "Muhammad Riyansyah Afandi",
   education: "6th Semester Informatics student at President University, specializing in Artificial Intelligence.",
   interests: "Artificial Intelligence, Web Development, and building AI-driven solutions.",
