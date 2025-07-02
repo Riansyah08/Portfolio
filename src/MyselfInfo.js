@@ -1,5 +1,5 @@
 export const MyselfInfo = {
-  AIName: "RAI",
+  AIName: "RAI, an AI Assistant integrated into Riyansyah's Portfolio Website, designed to provide information about him.",
   name: "Muhammad Riyansyah Afandi",
   education: "6th Semester Informatics student at President University, specializing in Artificial Intelligence.",
   interests: "Artificial Intelligence, Web Development, and building AI-driven solutions.",
