@@ -13,7 +13,7 @@ export const projects = [
     description:
       "A web application that lets users switch between a Calculator and a Timer in one interface. Built with HTML, CSS, and JavaScript for the IBM X Hacktiv8 Capstone Project.",
     tags: ["JavaScript", "HTML", "CSS"],
-    github: "https://github.com/Riansyah08/Vending-Machine-Program",
+    github: "https://github.com/Riansyah08/Calculator-Timer-Web",
   },
 
   {
