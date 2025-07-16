@@ -1,12 +1,10 @@
-import { useEffect, useRef, useState } from "react";
 import { Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import Projects from "./project/Projects";
 import Chatbot from "./chatbots/Chatbot";
-
-import { MyselfInfo } from "./MyselfInfo";
+import { Analytics } from "@vercel/analytics/next";
 
 export default function App() {
   return (
@@ -20,6 +18,7 @@ export default function App() {
         <Chatbot />
       </main>
       <Footer />
+      <Analytics />
     </div>
   );
 }

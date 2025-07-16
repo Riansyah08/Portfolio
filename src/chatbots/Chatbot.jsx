@@ -1,5 +1,4 @@
 import { useEffect, useRef, useState } from "react";
-import { Routes, Route } from "react-router-dom";
 import ChatbotIcon from "./ChatbotIcon";
 import ChatMessage from "./ChatMessage";
 import ChatForm from "./ChatForm";
@@ -64,10 +63,7 @@ export default function App() {
       return;
     }
 
-    if (
-      lastUserMessage.includes("nama") ||
-      lastUserMessage.includes("name") 
-    ) {
+    if (lastUserMessage.includes("nama") || lastUserMessage.includes("name")) {
       setChatHistory((prev) => [
         ...prev.filter((msg) => msg.text !== "Thinking..."),
         { role: "model", text: `His name is:\n${MyselfInfo.name}` },
@@ -83,7 +79,7 @@ export default function App() {
       lastUserMessage.includes("universitas") ||
       lastUserMessage.includes("Universitas") ||
       lastUserMessage.includes("kuliah") ||
-      lastUserMessage.includes("Kuliah") 
+      lastUserMessage.includes("Kuliah")
     ) {
       setChatHistory((prev) => [
         ...prev.filter((msg) => msg.text !== "Thinking..."),
@@ -106,7 +102,7 @@ export default function App() {
       ]);
       return;
     }
-    
+
     if (
       lastUserMessage.includes("contact info") ||
       lastUserMessage.includes("how can i contact") ||
@@ -118,7 +114,10 @@ export default function App() {
     ) {
       setChatHistory((prev) => [
         ...prev.filter((msg) => msg.text !== "Thinking..."),
-        { role: "model", text: `You can contact him via:\n${MyselfInfo.contact}` },
+        {
+          role: "model",
+          text: `You can contact him via:\n${MyselfInfo.contact}`,
+        },
       ]);
       return;
     }
@@ -170,7 +169,10 @@ export default function App() {
     ) {
       setChatHistory((prev) => [
         ...prev.filter((msg) => msg.text !== "Thinking..."),
-        { role: "model", text: `His Certificate include:\n${MyselfInfo.certificate} He also holds additional certificates in:\n${MyselfInfo.additionalTitles}` },
+        {
+          role: "model",
+          text: `His Certificate include:\n${MyselfInfo.certificate} He also holds additional certificates in:\n${MyselfInfo.additionalTitles}`,
+        },
       ]);
       return;
     }
@@ -194,9 +196,13 @@ export default function App() {
     };
 
     try {
-      const response = await fetch(import.meta.env.VITE_API_URL, requestOptions);
+      const response = await fetch(
+        import.meta.env.VITE_API_URL,
+        requestOptions
+      );
       const data = await response.json();
-      if (!response.ok) throw new Error(data.error.message || "Something went wrong!");
+      if (!response.ok)
+        throw new Error(data.error.message || "Something went wrong!");
 
       const apiResponseText = data.candidates[0].content.parts[0].text
         .replace(/\*\*(.*?)\*\*/g, "$1")
@@ -219,7 +225,6 @@ export default function App() {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-50 dark:from-slate-900 dark:via-slate-800 dark:to-slate-900 text-slate-800 dark:text-slate-100 flex flex-col relative">
-        
       {showChatbot && (
         <div
           className="fixed inset-0 bg-slate-900/20 backdrop-blur-sm z-40"
@@ -272,7 +277,9 @@ export default function App() {
               <ChatbotIcon />
             </div>
             <div>
-              <h2 className="text-white text-lg font-semibold tracking-tight">AI Assistant</h2>
+              <h2 className="text-white text-lg font-semibold tracking-tight">
+                AI Assistant
+              </h2>
               <p className="text-slate-300 text-xs">Professional AI Support</p>
             </div>
           </div>
@@ -307,7 +314,8 @@ export default function App() {
                 <p className="text-sm leading-relaxed">
                   <span className="font-medium">Hello! 👋</span>
                   <br />
-                  I'm your AI assistant, ready to help with technical questions, code reviews, architecture discussions, and more.
+                  I'm your AI assistant, ready to help with technical questions,
+                  code reviews, architecture discussions, and more.
                 </p>
               </div>
               <div className="text-xs text-slate-400 dark:text-slate-500 mt-1 ml-1">
