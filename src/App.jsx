@@ -4,7 +4,7 @@ import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import Projects from "./project/Projects";
 import Chatbot from "./chatbots/Chatbot";
-import { Analytics } from "@vercel/analytics/next";
+import { Analytics } from "@vercel/analytics/react"
 
 export default function App() {
   return (
