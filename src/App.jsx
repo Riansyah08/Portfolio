@@ -5,6 +5,7 @@ import Home from "./pages/Home";
 import Projects from "./project/Projects";
 import Chatbot from "./chatbots/Chatbot";
 import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/react";
 
 export default function App() {
   return (
@@ -21,6 +22,7 @@ export default function App() {
       </div>
       <Chatbot />
       <Analytics />
+      <SpeedInsights />
     </>
   );
 }
