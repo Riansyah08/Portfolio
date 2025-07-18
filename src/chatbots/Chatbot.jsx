@@ -224,7 +224,7 @@ export default function App() {
   }, [chatHistory]);
 
   return (
-    <>
+    <div className="bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-50 dark:from-slate-900 dark:via-slate-800 dark:to-slate-900 text-slate-800 dark:text-slate-100 flex flex-col relative">
       {showChatbot && (
         <div
           className="fixed inset-0 bg-slate-900/20 backdrop-blur-sm z-40"
@@ -370,6 +370,6 @@ export default function App() {
           background-color: rgb(100 116 139);
         }
       `}</style>
-    </>
+    </div>
   );
 }
