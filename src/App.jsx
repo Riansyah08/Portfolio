@@ -17,8 +17,8 @@ export default function App() {
         </Routes>
       </main>
       <Footer />
+    </div>
       <Chatbot />
       <Analytics />
-    </div>
   );
 }
