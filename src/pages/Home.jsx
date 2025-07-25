@@ -92,7 +92,7 @@ useEffect(() => {
                 </h1>
                 
                 <p className="text-xl lg:text-2xl text-gray-600 dark:text-gray-300 max-w-2xl font-light">
-                  Programmer • AI Developer • Passionate about Tech
+                  Programmer • AI Developer • Web Developer • Passionate about Tech
                 </p>
               </div>
 
