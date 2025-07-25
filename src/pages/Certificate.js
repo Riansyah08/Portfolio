@@ -40,31 +40,13 @@ export const certificates = [
       "https://drive.google.com/file/d/14QcMbf1queOK3YjB3_iqpAwcRJJJONth/view?usp=sharing",
   },
 
-  // Dasar-Dasar Implementasi Kecerdasan Artifisial
-  {
-    image:
-      "./img/Sertifikat_MUHAMMAD RIYANSYAH AFANDI_Dasar-Dasar Implementasi Kecerdasan Artifisial (1)_page-0001.jpg",
-    title: "Dasar-Dasar Implementasi AI",
-    website:
-      "https://drive.google.com/file/d/1itpWSylgHLSwCepjlQTEN0RC7xG0tiuL/view?usp=sharing",
-  },
-
   // Linear Models in Machine Learning_ Fundamentals
   {
     image:
       "./img/Sertifikat_MUHAMMAD RIYANSYAH AFANDI_Linear Models in Machine Learning_ Fundamentals (1)_page-0001.jpg",
-    title: "Linear Models in Machine Learning (Fundamentals)",
+    title: "Linear Models in Machine Learning Bootcamps by Digitalent",
     website:
-      "https://drive.google.com/file/d/1eRHycXPOvgtc-_tiyZddgfxRZfMcgeHj/view?usp=sharing",
-  },
-
-  // Seberapa Penting Menjaga Data Pribadi dan Pelindungannya
-  {
-    image:
-      "./img/Sertifikat_MUHAMMAD RIYANSYAH AFANDI_Seberapa Penting Menjaga Data Pribadi dan Pelindungannya (1)_page-0001.jpg",
-    title: "Seberapa Penting Menjaga Data Pribadi dan Pelindungannya",
-    website:
-      "https://drive.google.com/file/d/1F8_tLS3M_7cykX2V66yfVRVag2OrM_N4/view?usp=sharing",
+      "https://drive.google.com/drive/folders/179mcWm3urwQ-GZPbLj-NQoZVAi2Myux6?usp=sharing",
   },
 
   // Belajar Dasar Data Science
