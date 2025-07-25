@@ -409,6 +409,7 @@ useEffect(() => {
                 { src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original-wordmark.svg", name: "PyTorch" },
                 { src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/matlab/matlab-original.svg", name: "MATLAB" },
                 { src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original-wordmark.svg", name: "Flask" },
+                { src: "https://cdn.simpleicons.org/laravel/FF2D20", name: "Laravel" },
               ].map((skill, index) => (
                 <div
                   key={index}
