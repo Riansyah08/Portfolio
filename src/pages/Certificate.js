@@ -4,7 +4,7 @@ export const certificates = [
     image: "./img/Certificate AI Ignition_page-0001.jpg",
     title: "AI Ignition (KUMPUL)",
     website:
-      "https://drive.google.com/file/d/1R_HjIrJrPAoYk6jArFO7GEhrMRxGEho2/view?usp=sharing",
+      "https://drive.google.com/file/d/1gipJpR3xYHmsxGFG6_FeQ1uA329VCuLk/view?usp=sharing",
   },
 
   // Data Series 14.0
@@ -12,7 +12,7 @@ export const certificates = [
     image: "./img/a93fd7a2-afe3-4efb-ae57-a5c799acdfcd_page-0001 (1).jpg",
     title: "Data Series Fair 14.0 - AI Machine Learning",
     website:
-      "https://drive.google.com/file/d/1d8qKB7EgFZ0SYfU7LKnwvAEYmDsPjYyv/view?usp=sharing",
+      "https://drive.google.com/file/d/1WF_U5A5xYS2OForP7LDgyCZ0g-ttRZdm/view?usp=sharing",
   },
 
   // IBM Code
@@ -35,9 +35,9 @@ export const certificates = [
   {
     image:
       "./img/MUHAMMAD RIYANSYAH AFANDI - Pelatihan Generative AI for Information System_page-0001.jpg",
-    title: "Pelatihan Generative AI",
+    title: "Pelatihan Generative AI by Digitalent",
     website:
-      "https://drive.google.com/file/d/14QcMbf1queOK3YjB3_iqpAwcRJJJONth/view?usp=sharing",
+      "https://drive.google.com/file/d/1ctqi48KKQRcMhnx0dikh_IAMt8W3hP6N/view?usp=sharing",
   },
 
   // Linear Models in Machine Learning
@@ -63,6 +63,24 @@ export const certificates = [
       "./img/sertifikat_course_ Belajar Dasar Visualisasi Data_page-0001.jpg",
     title: "Belajar Dasar Visualisasi Data",
     website:
-      "https://drive.google.com/file/d/1SeskwKLzr1KBrPcTF9xRgGGfcPqS9lS1/view?usp=sharing",
+      "https://drive.google.com/file/d/1L1yA6ZP4GSm5DONAZN5gLz7puxXlnrbm/view?usp=sharing",
+  },
+
+  // Data Science Bootcamp by DQLab
+  {
+    image:
+      "./img/certificate-DQLABINTP1HUAPTQ_page-0001.jpg",
+    title: "Data Science Bootcamp by DQLab",
+    website:
+      "https://drive.google.com/drive/folders/1MBaNSyjC-HoOF8gkRZBXbSDucT4gayan?usp=sharing",
+  },
+
+  // Produktif Dengan AI - 2025 
+  {
+    image:
+      "./img/sertifikat_course_ AI Praktis untuk Produktivitas_page-0001.jpg",
+    title: "Produktif Dengan AI 2025 Bootcamp by Dicoding",
+    website:
+      "https://drive.google.com/drive/folders/1GZHk_mcKnFjuz4b_mp50F7ocpqPkM-Sm?usp=sharing",
   },
 ];

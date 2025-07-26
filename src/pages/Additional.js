@@ -10,9 +10,9 @@ export const additionals = [
   // DET
   {
     image: "./img/Duolingo English Test_page-0001.jpg",
-    title: "DDuolingo English Test",
+    title: "Duolingo English Test",
     website:
-      "https://drive.google.com/file/d/1MR5t5rJqJQULrVDFsZ_K8B73Aec13nUF/view?usp=sharing",
+      "https://drive.google.com/file/d/1VFhgWhjVu4rWYnC5U0Co4dG4zv6WtpW5/view?usp=drive_link",
   },
 
   // TOEFL ITP
@@ -20,7 +20,15 @@ export const additionals = [
     image: "./img/MUHAMMAD RIYANSYAH AFANDI - TOEFL ITP_page-0003.jpg",
     title: "TOEFL ITP",
     website:
-      "https://drive.google.com/file/d/12QdClDIqFglaRF5gKLpbba-usG-i-jbs/view?usp=sharing",
+      "https://drive.google.com/file/d/1SQNJjIHopD49tWscdwSOsOCFy3wq_8_3/view?usp=drive_link",
+  },
+
+  // Mandarin
+  {
+    image: "./img/Certificate of Completion Mandarin_Part54_page-0001.jpg",
+    title: "Mandarin",
+    website:
+      "https://drive.google.com/drive/folders/1xnXtRDUazYJfMHW6jJP9u8rgmqpPZZQh?usp=sharing",
   },
 
   // Canva Certificate
