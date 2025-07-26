@@ -2,7 +2,7 @@ export const certificates = [
   // AI Ignition
   {
     image: "./img/Certificate AI Ignition_page-0001.jpg",
-    title: "AI Ignition (KUMPUL)",
+    title: "AI Ignition by KUMPUL",
     website:
       "https://drive.google.com/file/d/1gipJpR3xYHmsxGFG6_FeQ1uA329VCuLk/view?usp=sharing",
   },
@@ -10,7 +10,7 @@ export const certificates = [
   // Data Series 14.0
   {
     image: "./img/a93fd7a2-afe3-4efb-ae57-a5c799acdfcd_page-0001 (1).jpg",
-    title: "Data Series Fair 14.0 - AI Machine Learning",
+    title: "Data Series Fair 14.0 by Dibimbing",
     website:
       "https://drive.google.com/file/d/1WF_U5A5xYS2OForP7LDgyCZ0g-ttRZdm/view?usp=sharing",
   },
@@ -79,7 +79,7 @@ export const certificates = [
   {
     image:
       "./img/sertifikat_course_ AI Praktis untuk Produktivitas_page-0001.jpg",
-    title: "Produktif Dengan AI 2025 Bootcamp by Dicoding",
+    title: "Produktif Dengan AI 2025 Bootcamp by Dicoding X AVPN",
     website:
       "https://drive.google.com/drive/folders/1GZHk_mcKnFjuz4b_mp50F7ocpqPkM-Sm?usp=sharing",
   },
