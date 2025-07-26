@@ -44,7 +44,7 @@ export const certificates = [
   {
     image:
       "./img/Sertifikat_MUHAMMAD RIYANSYAH AFANDI_Linear Models in Machine Learning_ Fundamentals (1)_page-0001.jpg",
-    title: "Linear Models in Machine Learning Bootcamps by Digitalent",
+    title: "Linear Models in Machine Learning Bootcamp by Digitalent",
     website:
       "https://drive.google.com/drive/folders/179mcWm3urwQ-GZPbLj-NQoZVAi2Myux6?usp=sharing",
   },
@@ -52,7 +52,7 @@ export const certificates = [
   // ID Camp 2024
   {
     image: "./img/sertifikat_course_ Belajar Dasar Data Science_page-0001.jpg",
-    title: "ID Camp 2024",
+    title: "ID Camp 2024 Bootcamp by Dicoding",
     website:
       "https://drive.google.com/drive/folders/16JDeaW5VInZJJEgSTRFaPJL-avPXii9O?usp=sharing",
   },
