@@ -40,7 +40,7 @@ export const certificates = [
       "https://drive.google.com/file/d/14QcMbf1queOK3YjB3_iqpAwcRJJJONth/view?usp=sharing",
   },
 
-  // Linear Models in Machine Learning_ Fundamentals
+  // Linear Models in Machine Learning
   {
     image:
       "./img/Sertifikat_MUHAMMAD RIYANSYAH AFANDI_Linear Models in Machine Learning_ Fundamentals (1)_page-0001.jpg",
@@ -49,12 +49,12 @@ export const certificates = [
       "https://drive.google.com/drive/folders/179mcWm3urwQ-GZPbLj-NQoZVAi2Myux6?usp=sharing",
   },
 
-  // Belajar Dasar Data Science
+  // ID Camp 2024
   {
     image: "./img/sertifikat_course_ Belajar Dasar Data Science_page-0001.jpg",
-    title: "Belajar Dasar Data Science",
+    title: "ID Camp 2024",
     website:
-      "https://drive.google.com/file/d/1jPlwtCpJmvlDSbnoOnS1x8Hrbl0QqjsH/view?usp=sharing",
+      "https://drive.google.com/drive/folders/16JDeaW5VInZJJEgSTRFaPJL-avPXii9O?usp=sharing",
   },
 
   // Belajar Dasar Visualisasi Data
@@ -64,22 +64,5 @@ export const certificates = [
     title: "Belajar Dasar Visualisasi Data",
     website:
       "https://drive.google.com/file/d/1SeskwKLzr1KBrPcTF9xRgGGfcPqS9lS1/view?usp=sharing",
-  },
-
-  // Memulai Pemrograman dengan Python
-  {
-    image:
-      "./img/sertifikat_course_ Memulai Pemrograman dengan Python_page-0001.jpg",
-    title: "Memulai Pemrograman dengan Python",
-    website:
-      "https://drive.google.com/file/d/1rKD0RMNCKO23QZr_wIUZIlXigPS3Z-hU/view?usp=sharing",
-  },
-
-  // Belajar Dasar SQL
-  {
-    image: "./img/sertifikat_course_Belajar Dasar SQL_page-0001.jpg",
-    title: "Belajar Dasar SQL",
-    website:
-      "https://drive.google.com/file/d/1e4AGRMCMD1ksACYe_UIyq-fCZO4usyzt/view?usp=sharing",
   },
 ];
