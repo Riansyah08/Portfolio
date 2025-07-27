@@ -57,13 +57,13 @@ export const certificates = [
       "https://drive.google.com/drive/folders/16JDeaW5VInZJJEgSTRFaPJL-avPXii9O?usp=sharing",
   },
 
-  // Belajar Dasar Visualisasi Data
+  // Coding Camp 2025 powered by DBS Foundation (Dicoding)
   {
     image:
       "./img/sertifikat_course_ Belajar Dasar Visualisasi Data_page-0001.jpg",
-    title: "Belajar Dasar Visualisasi Data",
+    title: "Coding Camp 2025 powered by DBS Foundation (Dicoding)",
     website:
-      "https://drive.google.com/file/d/1L1yA6ZP4GSm5DONAZN5gLz7puxXlnrbm/view?usp=sharing",
+      "https://drive.google.com/drive/folders/1Tou_9DN-JGYv8z6bSjdN-2dFUNNHxU9y?usp=sharing",
   },
 
   // Data Science Bootcamp by DQLab
