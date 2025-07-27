@@ -17,10 +17,10 @@ export const certificates = [
 
   // IBM Code
   {
-    image: "./img/IBMDesign20250626-27-38qktr_page-0001.jpg",
-    title: "IBM Code Generation and Optimization Using IBM Granite",
+    image: "./img/Sertifikat Code Generation and Optimization - Wave 3_page-0001.jpg",
+    title: "Student Developer Initiative (Code Generation and Optimization) by Hacktiv8 X IBM",
     website:
-      "https://drive.google.com/file/d/1PrE0NHW_6tMDrIKVFzIZmw0jGshSQZj7/view?usp=sharing",
+      "https://drive.google.com/drive/folders/1TlSVeKM6P6PA4n5-RSnB6erAUk5SdN-c?usp=sharing",
   },
 
   // Llama DevLab ID
