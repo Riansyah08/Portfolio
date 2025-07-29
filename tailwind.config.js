@@ -2,9 +2,9 @@ module.exports = {
   content: [
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
-    "./node_modules/flowbite-react/**/*.js", // ✅ for Flowbite
+    "./node_modules/flowbite-react/**/*.js", 
   ],
-  darkMode: "class", // ✅ must be "class"
+  darkMode: "class", 
   theme: {
     extend: {},
   },
