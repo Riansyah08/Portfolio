@@ -29,7 +29,7 @@ export const projects = [
     title: "Training Yoga Image Classification",
     description:
       "A university mini project for a Computer Vision course focused on classifying Yoga poses from images using multiple deep learning models. The system processes datasets, handles class imbalance, trains various CNN architectures (ResNet, EfficientNet, VGG, MobileNet), and generates evaluation metrics such as confusion matrices and performance comparison reports to assist in Yoga posture detection and training support.",
-    tags: ["Python"],
+    tags: ["Jupyter Notebook"],
     github:
       "https://github.com/Riansyah08/training-yoga-image-classification",
   },
