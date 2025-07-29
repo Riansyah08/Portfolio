@@ -21,6 +21,9 @@ export default function Projects() {
       'Java': 'bg-orange-500 text-orange-100',
       'HTML': 'bg-green-700 text-green-100',
       'MySQL': 'bg-blue-800 text-blue-100',
+      'Arduino': 'bg-red-500 text-red-100',        
+      'C++': 'bg-indigo-600 text-indigo-100',      
+      'Robotics': 'bg-emerald-600 text-emerald-100',
       'default': 'bg-gray-600 text-gray-100'
     };
     return colors[tag] || colors.default;
