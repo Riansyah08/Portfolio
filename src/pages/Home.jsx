@@ -12,6 +12,7 @@ import {
   Brain,
   Zap,
   MapPin,
+  Layout,
   Clock,
   Trophy,
   Star,
@@ -233,7 +234,7 @@ export default function Home() {
         <section
           id="experience"
           data-section
-          className={`py-20 px-4 bg-gray-50 dark:bg-gray-800/50 transition-all duration-1000 ${
+          className={`py-20 px-4 bg-gray-50 dark:bg-gray-800/50 transition-opacity transition-transform duration-1000 ${
             isVisible.experience
               ? "opacity-100 translate-y-0"
               : "opacity-0 translate-y-10"
@@ -252,29 +253,47 @@ export default function Home() {
               <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-gradient-to-b from-blue-600 to-purple-600"></div>
 
               <div className="space-y-12">
-                {/* Experience Item 1 */}
+                {/* Experience Internship Item 2 */}
                 <div className="relative flex items-start gap-8">
-                  <div className="flex-shrink-0 w-16 h-16 bg-gradient-to-br from-green-500 to-green-600 rounded-full flex items-center justify-center shadow-lg">
-                    <Calendar className="w-8 h-8 text-white" />
+                  <div className="flex-shrink-0 w-16 h-16 bg-gradient-to-br from-cyan-500 to-cyan-600 rounded-full flex items-center justify-center shadow-lg">
+                    <Brain className="w-8 h-8 text-white" />
                   </div>
                   <div className="flex-grow bg-white dark:bg-gray-800 p-8 rounded-2xl shadow-lg border border-gray-200 dark:border-gray-700">
                     <div className="flex items-center gap-3 mb-4">
                       <span className="text-sm font-medium text-gray-600 dark:text-gray-400">
-                        2025 - Present
+                        September 2025 - Present
                       </span>
                       <span className="px-3 py-1 bg-green-100 dark:bg-green-900/30 text-green-800 dark:text-green-300 text-xs font-medium rounded-full">
                         Active
                       </span>
                     </div>
                     <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3">
-                      Looking for Internship Opportunity
+                      PT. Alpabit Digital Inovasi, AI Specialist Intern
+                      (On-Site)
                     </h3>
-                    <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
-                      Actively seeking internship opportunities in AI
-                      Development, Web Development, or related fields to enhance
-                      my technical skills and gain real-world industry
-                      experience.
-                    </p>
+                    <p className="text-gray-700 dark:text-gray-300 leading-relaxed"></p>
+                  </div>
+                </div>
+
+                {/* Experience Internship Item 2 */}
+                <div className="relative flex items-start gap-8">
+                  <div className="flex-shrink-0 w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-full flex items-center justify-center shadow-lg">
+                    <Layout className="w-8 h-8 text-white" />
+                  </div>
+                  <div className="flex-grow bg-white dark:bg-gray-800 p-8 rounded-2xl shadow-lg border border-gray-200 dark:border-gray-700">
+                    <div className="flex items-center gap-3 mb-4">
+                      <span className="text-sm font-medium text-gray-600 dark:text-gray-400">
+                        August 2025 - Present
+                      </span>
+                      <span className="px-3 py-1 bg-green-100 dark:bg-green-900/30 text-green-800 dark:text-green-300 text-xs font-medium rounded-full">
+                        Active
+                      </span>
+                    </div>
+                    <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3">
+                      PT. Ngontenin Digital Indonesia, Frontend Engineering
+                      Intern (Remote)
+                    </h3>
+                    <p className="text-gray-700 dark:text-gray-300 leading-relaxed"></p>
                   </div>
                 </div>
 
@@ -308,7 +327,7 @@ export default function Home() {
 
                 {/* Experience Item 3 */}
                 <div className="relative flex items-start gap-8">
-                  <div className="flex-shrink-0 w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-full flex items-center justify-center shadow-lg">
+                  <div className="flex-shrink-0 w-16 h-16 bg-gradient-to-br from-green-500 to-green-600 rounded-full flex items-center justify-center shadow-lg">
                     <Brain className="w-8 h-8 text-white" />
                   </div>
                   <div className="flex-grow bg-white dark:bg-gray-800 p-8 rounded-2xl shadow-lg border border-gray-200 dark:border-gray-700">
@@ -331,7 +350,7 @@ export default function Home() {
                 {/* Experience Item 4 */}
                 <div className="relative flex items-start gap-8">
                   <div className="flex-shrink-0 w-16 h-16 bg-gradient-to-br from-orange-500 to-orange-600 rounded-full flex items-center justify-center shadow-lg">
-                    <Trophy className="w-8 h-8 text-white" />
+                    <Award className="w-8 h-8 text-white" />
                   </div>
                   <div className="flex-grow bg-white dark:bg-gray-800 p-8 rounded-2xl shadow-lg border border-gray-200 dark:border-gray-700">
                     <div className="flex items-center gap-3 mb-4">

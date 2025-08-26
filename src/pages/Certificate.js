@@ -15,6 +15,14 @@ export const certificates = [
       "https://drive.google.com/file/d/1WF_U5A5xYS2OForP7LDgyCZ0g-ttRZdm/view?usp=sharing",
   },
 
+  // Mattel Indonesia - Computer Science Bootcamp 2025
+  {
+    image: "./img/Pt. Mattel Certificate_page-0001.png",
+    title: "Mattel Indonesia - Project Collaboration with President University",
+    website:
+      "https://drive.google.com/file/d/1L1RicawPc59qrvPmPw0pu4URzoaDnEjf/view?usp=sharing",
+  },
+
   // IBM Code
   {
     image: "./img/Sertifikat Code Generation and Optimization - Wave 3_page-0001.jpg",
@@ -75,7 +83,7 @@ export const certificates = [
       "https://drive.google.com/drive/folders/1MBaNSyjC-HoOF8gkRZBXbSDucT4gayan?usp=sharing",
   },
 
-  // Produktif Dengan AI - 2025 
+  // Produktif Dengan AI - 2025 by Dicoding X AVPN
   {
     image:
       "./img/sertifikat_course_ AI Praktis untuk Produktivitas_page-0001.jpg",
@@ -83,4 +91,22 @@ export const certificates = [
     website:
       "https://drive.google.com/drive/folders/1GZHk_mcKnFjuz4b_mp50F7ocpqPkM-Sm?usp=sharing",
   },
+
+  // Korean ASEAN Digital Academy by ELice
+  {
+    image:
+      "./img/KADA Certificate of Completion_page-0001.jpg",
+    title: "Korean ASEAN Digital Academy by ELice",
+    website:
+      "https://drive.google.com/file/d/1X2QhAd08qCTiMo1dO6BiL7TtlYGrm4vJ/view?usp=sharing",
+  },
+
+    // Python for Data Science, AI & Development by Coursera (IBM)
+    {
+      image:
+        "./img/Coursera 06P37WYSWEC9_page-0001.jpg",
+      title: "Python for Data Science, AI & Development by Coursera (IBM)",
+      website:
+        "https://drive.google.com/file/d/1uqRN1tM3kCMZKcEVLYEKuG3zDX59uQf8/view?usp=sharing",
+    },
 ];
