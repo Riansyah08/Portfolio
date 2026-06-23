@@ -51,7 +51,8 @@ export default function App() {
       lastUserMessage.includes("pelamar") ||
       lastUserMessage.includes("Pelamar") ||
       lastUserMessage.includes("melamar") ||
-      lastUserMessage.includes("Melamar")
+      lastUserMessage.includes("Melamar") ||
+      lastUserMessage.includes("do you know anything about riyansyah")
     ) {
       setChatHistory((prev) => [
         ...prev.filter((msg) => msg.text !== "Thinking..."),
@@ -83,7 +84,7 @@ export default function App() {
     ) {
       setChatHistory((prev) => [
         ...prev.filter((msg) => msg.text !== "Thinking..."),
-        { role: "model", text: `His name is:\n${MyselfInfo.education}` },
+        { role: "model", text: `He's in Semester:\n${MyselfInfo.education}` },
       ]);
       return;
     }
@@ -98,7 +99,7 @@ export default function App() {
     ) {
       setChatHistory((prev) => [
         ...prev.filter((msg) => msg.text !== "Thinking..."),
-        { role: "model", text: `His name is:\n${MyselfInfo.interests}` },
+        { role: "model", text: `His Interest:\n${MyselfInfo.interests}` },
       ]);
       return;
     }
@@ -130,7 +131,7 @@ export default function App() {
     ) {
       setChatHistory((prev) => [
         ...prev.filter((msg) => msg.text !== "Thinking..."),
-        { role: "model", text: `His Motivation is:\n${MyselfInfo.motivation}` },
+        { role: "model", text: `His Motivation:\n${MyselfInfo.motivation}` },
       ]);
       return;
     }
@@ -141,7 +142,7 @@ export default function App() {
     ) {
       setChatHistory((prev) => [
         ...prev.filter((msg) => msg.text !== "Thinking..."),
-        { role: "model", text: `His Github is:\n${MyselfInfo.Github}` },
+        { role: "model", text: `His Github Link:\n${MyselfInfo.Github}` },
       ]);
       return;
     }
@@ -171,7 +172,7 @@ export default function App() {
         ...prev.filter((msg) => msg.text !== "Thinking..."),
         {
           role: "model",
-          text: `His Certificate include:\n${MyselfInfo.certificate} He also holds additional certificates in:\n${MyselfInfo.additionalTitles}`,
+          text: `His Certificate includes:\n${MyselfInfo.certificate} He also holds additional certificates in:\n${MyselfInfo.additionalTitles}`,
         },
       ]);
       return;
@@ -196,19 +197,14 @@ export default function App() {
     };
 
     try {
-      const response = await fetch(
-        import.meta.env.VITE_API_URL,
-        requestOptions
-      );
-      const data = await response.json();
-      if (!response.ok)
-        throw new Error(data.error.message || "Something went wrong!");
-
-      const apiResponseText = data.candidates[0].content.parts[0].text
-        .replace(/\*\*(.*?)\*\*/g, "$1")
-        .trim();
-
-      updateHistory(apiResponseText);
+      setChatHistory((prev) => [
+        ...prev.filter((msg) => msg.text !== "Thinking..."),
+        {
+          role: "model",
+          text: "I can only answer questions about Riyansyah, such as his biodata, education, skills, certificates, interests, motivation, contact information, and GitHub.",
+        },
+      ]);
+      return;
     } catch (error) {
       updateHistory(error.message, true);
     }
@@ -315,7 +311,7 @@ export default function App() {
                   <span className="font-medium">Hello! 👋</span>
                   <br />
                   I'm your AI assistant, ready to help with technical questions,
-                  code reviews, architecture discussions, and more.
+                  About Riyansyah, and more.
                 </p>
               </div>
               <div className="text-xs text-slate-400 dark:text-slate-500 mt-1 ml-1">

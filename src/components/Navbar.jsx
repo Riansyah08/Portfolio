@@ -113,25 +113,25 @@ export default function Navbar() {
               <>
                 <li>
                   <ScrollLink to="home" {...scrollProps}>
-                    <span className="relative z-10">Home</span>
+                    <span className="relative z-10 text-gray-600 dark:text-white">Home</span>
                     <div className="absolute inset-x-0 -bottom-1 h-0.5 bg-gradient-to-r from-cyan-400 to-blue-500 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></div>
                   </ScrollLink>
                 </li>
                 <li>
                   <ScrollLink to="About-Section" {...scrollProps}>
-                    <span className="relative z-10">About</span>
+                    <span className="relative z-10 text-gray-600 dark:text-white">About</span>
                     <div className="absolute inset-x-0 -bottom-1 h-0.5 bg-gradient-to-r from-cyan-400 to-blue-500 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></div>
                   </ScrollLink>
                 </li>
                 <li>
                   <ScrollLink to="Experience-Section" {...scrollProps}>
-                    <span className="relative z-10">Experience</span>
+                    <span className="relative z-10 text-gray-600 dark:text-white">Experience</span>
                     <div className="absolute inset-x-0 -bottom-1 h-0.5 bg-gradient-to-r from-cyan-400 to-blue-500 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></div>
                   </ScrollLink>
                 </li>
                 <li>
                   <ScrollLink to="Certificates-Section" {...scrollProps}>
-                    <span className="relative z-10">Certificates</span>
+                    <span className="relative z-10 text-gray-600 dark:text-white">Certificates</span>
                     <div className="absolute inset-x-0 -bottom-1 h-0.5 bg-gradient-to-r from-cyan-400 to-blue-500 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></div>
                   </ScrollLink>
                 </li>
@@ -144,7 +144,7 @@ export default function Navbar() {
                     className={scrollProps.className}
                     onClick={closeMenu}
                   >
-                    <span className="relative z-10">Home</span>
+                    <span className="relative z-10 text-gray-600 dark:text-white">Home</span>
                     <div className="absolute inset-x-0 -bottom-1 h-0.5 bg-gradient-to-r from-cyan-400 to-blue-500 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></div>
                   </RouterLink>
                 </li>
@@ -154,7 +154,7 @@ export default function Navbar() {
                     className={scrollProps.className}
                     onClick={closeMenu}
                   >
-                    <span className="relative z-10">About</span>
+                    <span className="relative z-10 text-gray-600 dark:text-white">About</span>
                     <div className="absolute inset-x-0 -bottom-1 h-0.5 bg-gradient-to-r from-cyan-400 to-blue-500 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></div>
                   </RouterLink>
                 </li>
@@ -164,7 +164,7 @@ export default function Navbar() {
                     className={scrollProps.className}
                     onClick={closeMenu}
                   >
-                    <span className="relative z-10">Experience</span>
+                    <span className="relative z-10 text-gray-600 dark:text-white">Experience</span>
                     <div className="absolute inset-x-0 -bottom-1 h-0.5 bg-gradient-to-r from-cyan-400 to-blue-500 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></div>
                   </RouterLink>
                 </li>
@@ -174,7 +174,7 @@ export default function Navbar() {
                     className={scrollProps.className}
                     onClick={closeMenu}
                   >
-                    <span className="relative z-10">Certificates</span>
+                    <span className="relative z-10 text-gray-600 dark:text-white">Certificates</span>
                     <div className="absolute inset-x-0 -bottom-1 h-0.5 bg-gradient-to-r from-cyan-400 to-blue-500 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></div>
                   </RouterLink>
                 </li>

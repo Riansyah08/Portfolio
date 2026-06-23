@@ -3,7 +3,6 @@ import { certificates } from "./Certificate";
 import { additionals } from "./Additional";
 import { useEffect, useState } from "react";
 import {
-  Calendar,
   ExternalLink,
   Mail,
   User,
@@ -11,11 +10,8 @@ import {
   Code,
   Brain,
   Zap,
-  MapPin,
   Layout,
-  Clock,
   Trophy,
-  Star,
 } from "lucide-react";
 
 export default function Home() {
@@ -82,7 +78,7 @@ export default function Home() {
               : "opacity-0 translate-y-10"
           }`}
         >
-          <div className="flex flex-col lg:flex-row items-center gap-12 max-w-6xl mx-auto">
+          <div className="flex flex-col lg:flex-row items-center mb-50 gap-12 max-w-6xl mx-auto">
             {/* Profile Image */}
             <div className="relative group">
               <div className="absolute -inset-4 bg-gradient-to-r from-blue-600 to-purple-600 rounded-full blur opacity-25 group-hover:opacity-40 transition duration-1000"></div>
@@ -234,7 +230,7 @@ export default function Home() {
         <section
           id="experience"
           data-section
-          className={`py-20 px-4 bg-gray-50 dark:bg-gray-800/50 transition-opacity transition-transform duration-1000 ${
+          className={`py-20 px-4 bg-gray-50 dark:bg-gray-800/50 transition-opacity duration-1000 ${
             isVisible.experience
               ? "opacity-100 translate-y-0"
               : "opacity-0 translate-y-10"
@@ -283,10 +279,7 @@ export default function Home() {
                   <div className="flex-grow bg-white dark:bg-gray-800 p-8 rounded-2xl shadow-lg border border-gray-200 dark:border-gray-700">
                     <div className="flex items-center gap-3 mb-4">
                       <span className="text-sm font-medium text-gray-600 dark:text-gray-400">
-                        August 2025 - Present
-                      </span>
-                      <span className="px-3 py-1 bg-green-100 dark:bg-green-900/30 text-green-800 dark:text-green-300 text-xs font-medium rounded-full">
-                        Active
+                        August 2025 - October 2025
                       </span>
                     </div>
                     <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3">
@@ -305,10 +298,7 @@ export default function Home() {
                   <div className="flex-grow bg-white dark:bg-gray-800 p-8 rounded-2xl shadow-lg border border-gray-200 dark:border-gray-700">
                     <div className="flex items-center gap-3 mb-4">
                       <span className="text-sm font-medium text-gray-600 dark:text-gray-400">
-                        October 2024 - Present
-                      </span>
-                      <span className="px-3 py-1 bg-green-100 dark:bg-green-900/30 text-green-800 dark:text-green-300 text-xs font-medium rounded-full">
-                        Active
+                        October 2024 - September 2025
                       </span>
                     </div>
                     <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3">
