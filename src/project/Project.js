@@ -1,134 +1,176 @@
 export const projects = [
   {
-    title: "Defect Detection and Root Cause Analysis",
+    title: "OSKY - Oracle SOA Project",
+    image: "/projects_png/OSKY.png",
     description:
-      "An AI-based defect detection system using RCNN (Detectron2) with integrated root cause analysis. Includes a web interface to support PT Mattel Indonesia’s quality control processes.",
-    tags: ["Python", "Jupyter Notebook", "HTML"],
+      "An enterprise flight booking and rewards system built using Oracle SOA Suite, Oracle Coherence, and WebLogic Server.",
+    tags: ["OSB", "Coherence", "WebLogic", "React", "JavaScript"],
+    github:
+      "https://github.com/Riansyah08/Oracle-Plane-Ticket",
+  },
+  
+  {
+    title: "ACCEL – AI-Integrated Financial Auditor Dashboard",
+    image: "/projects_png/ACCEL.png",
+    description:
+      "AI-powered financial audit dashboard featuring OCR, Autoencoder, Classify, LLM, and interactive analytics.",
+    tags: ["Python", "K-Means", "Scikit-Learn", "Clustering"],
+    github:
+      "https://github.com/Rix-code/ACCEL",
+  },
+
+  {
+    title: "Defect Detection and Root Cause Analysis",
+    image: "/projects_png/DefectDetect.jpeg",
+    description:
+      "AI-powered defect detection using Detectron2 with integrated root cause analysis.",
+    tags: ["Python", "Detectron2", "Mask R-CNN", "Flask"],
     github:
       "https://github.com/Riansyah08/defect-detection-and-root-cause-analysis",
   },
 
   {
     title: "Yandex Machine Learning Hackathon",
+    image: "/projects_png/Hackaton.png",
     description:
-      "A machine learning solution developed during Yandex's hackathon to predict car travel times in Jakarta based on route, traffic, and weather data. Implemented multiple regression models including Linear Regression, XGBoost, LightGBM, and CatBoost to generate optimized predictions.",
-    tags: ["Jupyter Notebook"],
+      "Machine learning for predicting Jakarta travel time using traffic, route, and weather features with data preprocessing and model evaluation.",
+    tags: ["Python", "Machine Learning", "Regression", "Scikit-Learn"],
     github:
       "https://github.com/Riansyah08/yandex-ml-hackathon",
+    demo: "https://colab.research.google.com/drive/1yIG0gAtoZCx_JFJx1W2U3tjyvrdibf89?usp=sharing"
   },
 
   {
     title: "Calculator/Timer App",
+    image: "/projects_png/CalcTimer.png",
     description:
-      "A web application that lets users switch between a Calculator and a Timer in one interface. Built with HTML, CSS, and JavaScript for the IBM X Hacktiv8 Capstone Project.",
+      "Responsive web app combining a calculator and timer into a single interface.",
     tags: ["JavaScript", "HTML", "CSS"],
     github: "https://github.com/Riansyah08/calculator-timer-web",
+    demo: "https://calctimer.vercel.app/"
   },
 
   {
     title: "Training Yoga Image Classification",
+    image: "/projects_png/yoga.png",
     description:
-      "A university mini project for a Computer Vision course focused on classifying Yoga poses from images using multiple deep learning models. The system processes datasets, handles class imbalance, trains various CNN architectures (ResNet, EfficientNet, VGG, MobileNet), and generates evaluation metrics such as confusion matrices and performance comparison reports to assist in Yoga posture detection and training support.",
-    tags: ["Jupyter Notebook"],
+      "Deep learning comparison of CNN models for yoga pose image classification.",
+    tags: ["Python", "PyTorch", "OpenCV", "CNN"],
     github:
       "https://github.com/Riansyah08/training-yoga-image-classification",
+    demo: "https://colab.research.google.com/drive/1UhVgABLGuQucRZuoQhq5XdJGqYbxdZ_o?usp=sharing"
   },
-
 
   {
     title: "Basic Robot Car Command",
+    image: "/projects_png/CarRobot.png",
     description:
-      "An Arduino-based autonomous robot car that uses ultrasonic sensors, servo steering, and a PID control algorithm for real-time obstacle detection and avoidance. The robot scans its surroundings, determines the optimal direction, and navigates forward, backward, or turns to avoid collisions.",
+      "Basic Robot Car Command using Arduino with ultrasonic obstacle avoidance and PID steering control.",
     tags: ["Arduino", "C++", "Robotics"],
     github:
       "https://github.com/Riansyah08/basic-robot-car-command",
   },
 
-
   {
     title: "Covid-19 ChatBot",
+    image: "/projects_png/Chatbot19.png",
     description:
-      "A web-based chatbot for COVID-19 question answering using transformer models. Compared BERT and RoBERTa, selecting and deploying the best-performing model.",
-    tags: ["Python", "Jupyter Notebook"],
+      "Transformer-based chatbot comparing BERT and RoBERTa for COVID-19 question answering.",
+    tags: ["Python", "Flask", "BERT", "RoBERTa", "FAISS"],
     github: "https://github.com/Riansyah08/covid-19-question-answering-chatbot",
   },
 
   {
     title: "Photo Editor",
+    image: "/projects_png/PhoE.png",
     description:
-      "A desktop photo editor developed with Python, featuring over 15 image processing tools, including color adjustments, filtering, segmentation, and geometric transformations using OpenCV and Tkinter.",
-    tags: ["Python"],
+      "Desktop image editor with 15+ OpenCV-based image processing features.",
+    tags: ["Python", "OpenCV", "Tkinter"],
     github: "https://github.com/Riansyah08/mini-project-simple-photo-editor",
   },
 
   {
     title: "To Do App",
+    image: "/projects_png/ToDoApp.png",
     description:
-      "A responsive web-based To Do application built with React and JavaScript to manage personal task lists.",
+      "A responsive React application for creating, organizing, and managing daily tasks.",
     tags: ["React", "JavaScript"],
     github: "https://github.com/Riansyah08/todo-app",
+    demo: "https://todo-app-kada.vercel.app/"
   },
 
   {
     title: "Student Scores Prediction",
+    image: "/projects_png/StudentScores.png",
     description:
-      "A regression model to predict student scores based on study hours. Includes data preprocessing, visualization with Matplotlib, and model training using Scikit-Learn on Google Colab.",
-    tags: ["Jupyter Notebook"],
+      "A machine learning regression model that predicts student scores from study hours using Scikit-Learn.",
+    tags: ["Python", "Scikit-learn", "Linear Regression"],
     github: "https://github.com/Riansyah08/student-scores-prediction",
+    demo: "https://colab.research.google.com/drive/1ynCZIB63T-vgzGvTta1mYW2nefoBvZQk?usp=sharing"
   },
 
   {
     title: "Lost and Found App",
+    image: "/projects_png/LaFApp.jpeg",
     description:
-      "A mobile application developed with Android Studio and Firebase for reporting and tracking lost & found items. Features role-based login, image uploads, and real-time data storage.",
-    tags: ["Android Studio"],
+      "An Android application for reporting and tracking lost items using Firebase authentication and storage.",
+    tags: ["Java", "Firebase"],
     github: "https://github.com/Riansyah08/lost-and-found-app",
+    demo: "https://github.com/Riansyah08/lost-and-found-app/releases"
   },
 
   {
     title: "Student Enrollment App",
+    image: "/projects_png/SEA.jpeg",
     description:
-      "A mobile application using Android Studio and Firebase for student registration and class enrollment. Includes secure login and real-time data management.",
-    tags: ["Android Studio"],
+      "An Android application for student registration and class enrollment with Firebase integration.",
+    tags: ["Java"],
     github: "https://github.com/Riansyah08/student-enrollment-app",
+    demo: "https://github.com/Riansyah08/student-enrollment-app/releases"
   },
 
   {
     title: "Compare Integration Methods Program",
+    image: "/projects_png/Numerical.png",
     description:
-      "A Python program comparing Midpoint and Trapezoid numerical integration methods. Supports user-defined functions, error calculation, and convergence analysis.",
+      "A Python program comparing Midpoint and Trapezoid numerical integration methods.",
     tags: ["Python"],
     github: "https://github.com/Riansyah08/compare-integration-methods",
   },
 
   {
-    title: "Vehicle Purchase App",
+    title: "Estropees - Vehicle Purchase App",
+    image: "/projects_png/Estropees.png",
     description:
-      "A desktop application built with Java (Apache NetBeans) and MySQL for vehicle purchases. Includes vehicle selection, customer identity input, payment processing, and data storage.",
+      "A Java desktop application for vehicle purchasing with MySQL database integration.",
     tags: ["Java", "MySQL"],
     github: "https://github.com/Riansyah08/vehicle-purchase-app",
   },
 
   {
     title: "Student Grading System",
+    image: "/projects_png/StdntGrade.png",
     description:
-      "A web-based student grading system developed with Laravel and MySQL. Implements role-based authentication for teachers and students, with features for grade input and management.",
+      "A Laravel web application for managing student grades with role-based authentication.",
     tags: ["Laravel", "MySQL"],
     github: "https://github.com/Riansyah08/student-grading-system",
   },
 
   {
     title: "Game Info Website",
+    image: "/projects_png/wow.png",
     description:
-      "A static game website built with HTML and CSS, focusing on responsive layout and product catalog presentation.",
+      "A responsive website showcasing game information and product listings using HTML and CSS.",
     tags: ["HTML", "CSS"],
     github: "https://github.com/Riansyah08/game-news-and-shop",
+    demo: "https://worldofplays.vercel.app/"
   },
 
   {
     title: "Vending Machine Program",
+    image: "/projects_png/JavaVending.png",
     description:
-      "A console-based vending machine simulation developed in Java. Includes features for item selection, balance checking, and purchase transactions.",
+      "A Java console application simulating vending machine purchases and payment transactions.",
     tags: ["Java"],
     github: "https://github.com/Riansyah08/vending-machine-program",
   },

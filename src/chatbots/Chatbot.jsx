@@ -267,21 +267,21 @@ export default function App() {
               : "scale-95 opacity-0 pointer-events-none translate-y-4"
           } z-50`}
       >
-        <div className="flex justify-between items-center bg-gradient-to-r from-slate-800 to-slate-900 dark:from-slate-700 dark:to-slate-800 px-6 py-4 border-b border-slate-200/20">
+        <div className="flex justify-between items-center bg-gradient-to-r from-slate-50/50 to-slate-200/30 dark:from-slate-700 dark:to-slate-800 px-6 py-4 border-b border-slate-200/20">
           <div className="flex items-center gap-3">
             <div className="p-2 bg-gradient-to-r from-blue-500 to-indigo-500 rounded-lg">
               <ChatbotIcon />
             </div>
             <div>
-              <h2 className="text-white text-lg font-semibold tracking-tight">
+              <h2 className="text-slate-700 dark:text-white text-lg font-semibold tracking-tight">
                 AI Assistant
               </h2>
-              <p className="text-slate-300 text-xs">Professional AI Support</p>
+              <p className="text-slate-500 dark:text-slate-400 text-xs">Professional AI Support</p>
             </div>
           </div>
           <button
             onClick={() => setShowChatbot(false)}
-            className="h-9 w-9 flex items-center justify-center rounded-lg text-slate-300 hover:text-white hover:bg-slate-700/50 transition-all duration-200"
+            className="h-9 w-9 flex items-center justify-center rounded-lg text-slate-500 dark:text-slate-300 hover:text-white hover:bg-slate-700/50 transition-all duration-200"
           >
             <span className="material-symbols-rounded text-lg">
               keyboard_arrow_down

@@ -7,43 +7,43 @@ import Projects from "./project/Projects";
 import Chatbot from "./chatbots/Chatbot";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/react";
-import { ThemeProvider } from "./components/ThemeContext";
+import { useTheme } from "./components/ThemeContext";
+import Background from "./Backgrounds/Background";
+import BackgroundLight from "./Backgrounds/BackgroundLight";
 
 export default function App() {
-  const [theme, setTheme] = useState(() => {
-    return localStorage.getItem("theme") || "light";
-  });
-
-  const toggleMode = () => {
-    const newTheme = theme === "dark" ? "light" : "dark";
-    setTheme(newTheme);
-    localStorage.setItem("theme", newTheme);
-  };
-
-  useEffect(() => {
-    const root = window.document.documentElement;
-    if (theme === "dark") {
-      root.classList.add("dark");
-    } else {
-      root.classList.remove("dark");
-    }
-  }, [theme]);
+  const { isDark } = useTheme();
 
   return (
     <>
-      <ThemeProvider>
-        <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-50 dark:from-slate-900 dark:via-slate-800 dark:to-slate-900 text-slate-800 dark:text-slate-100 flex flex-col relative">
-          <Navbar />
-          <main className="flex-grow pt-20 px-4 sm:px-6 md:px-8">
-            <Routes>
-              <Route path="/" element={<Home />} />
-              <Route path="/projects" element={<Projects />} />
-            </Routes>
-          </main>
-          <Footer />
+      <div className="fixed inset-0 -z-10">
+        <div
+          className={`absolute inset-0 transition-opacity duration-300 ${
+            isDark ? "opacity-100" : "opacity-0"
+          }`}
+        >
+          <Background />
         </div>
-        <Chatbot />
-      </ThemeProvider>
+
+        <div
+          className={`absolute inset-0 transition-opacity duration-300 ${
+            isDark ? "opacity-0" : "opacity-100"
+          }`}
+        >
+          <BackgroundLight />
+        </div>
+      </div>
+      <div className="min-h-screen flex flex-col relative">
+        <Navbar />
+        <main className="flex-grow pt-20 px-4 sm:px-6 md:px-8">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/projects" element={<Projects />} />
+          </Routes>
+        </main>
+        <Footer />
+      </div>
+      <Chatbot />
       <Analytics />
       <SpeedInsights />
     </>

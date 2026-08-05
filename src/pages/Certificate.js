@@ -1,4 +1,12 @@
 export const certificates = [
+  // Mattel Indonesia - Computer Science Bootcamp 2025
+  {
+    image: "./img/Pt. Mattel Certificate_page-0001.png",
+    title: "Mattel Indonesia - Project Collaboration with President University",
+    website:
+      "https://drive.google.com/file/d/1L1RicawPc59qrvPmPw0pu4URzoaDnEjf/view?usp=sharing",
+  },
+  
   // AI Ignition
   {
     image: "./img/Certificate AI Ignition_page-0001.jpg",
@@ -13,14 +21,6 @@ export const certificates = [
     title: "Data Series Fair 14.0 by Dibimbing",
     website:
       "https://drive.google.com/file/d/1WF_U5A5xYS2OForP7LDgyCZ0g-ttRZdm/view?usp=sharing",
-  },
-
-  // Mattel Indonesia - Computer Science Bootcamp 2025
-  {
-    image: "./img/Pt. Mattel Certificate_page-0001.png",
-    title: "Mattel Indonesia - Project Collaboration with President University",
-    website:
-      "https://drive.google.com/file/d/1L1RicawPc59qrvPmPw0pu4URzoaDnEjf/view?usp=sharing",
   },
 
   // IBM Code
@@ -96,7 +96,7 @@ export const certificates = [
   {
     image:
       "./img/KADA Certificate of Completion_page-0001.jpg",
-    title: "Korean ASEAN Digital Academy by ELice",
+    title: "Korean ASEAN Digital Academy by Elice x Digitalent" ,
     website:
       "https://drive.google.com/file/d/1X2QhAd08qCTiMo1dO6BiL7TtlYGrm4vJ/view?usp=sharing",
   },

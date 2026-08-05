@@ -48,7 +48,7 @@ export default function Navbar() {
       height="20"
       viewBox="0 0 24 24"
       fill="currentColor"
-      className="text-slate-200"
+      className="text-slate-700 dark:text-slate-200"
     >
       <path d="M3 18H21V16H3V18ZM3 13H21V11H3V13ZM3 6V8H21V6H3Z" />
     </svg>
@@ -60,7 +60,7 @@ export default function Navbar() {
       height="20"
       viewBox="0 0 24 24"
       fill="currentColor"
-      className="text-slate-200"
+      className="text-slate-700 dark:text-slate-200"
     >
       <path d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41Z" />
     </svg>
@@ -209,7 +209,7 @@ export default function Navbar() {
 
           {/* Mobile Menu Button */}
           <div
-            className="lg:hidden relative w-10 h-10 hover:bg-slate-700 border border-slate-700 rounded-lg flex items-center justify-center cursor-pointer transition-all duration-300 hover:border-cyan-500/50"
+            className="lg:hidden relative w-10 h-10 hover:bg-slate-200 dark:hover:bg-slate-700 border border-slate-700 rounded-lg flex items-center justify-center cursor-pointer transition-all duration-300 hover:border-cyan-500/50"
             onClick={() => setMenuOpen(!menuOpen)}
           >
             {menuOpen ? <CloseIcon /> : <MenuIcon />}
@@ -223,7 +223,7 @@ export default function Navbar() {
           }`}
         >
           <div className="pt-6 pb-4">
-            <div className="bg-slate-900/50 backdrop-blur-lg rounded-xl border border-slate-800/50 p-6">
+            <div className="dark:bg-slate-900/50 backdrop-blur-lg rounded-xl border dark:border-slate-800/50 p-6">
               <div className="flex justify-end">
                 <button
                   onClick={toggleTheme}
@@ -244,7 +244,7 @@ export default function Navbar() {
                         to="home"
                         {...scrollProps}
                         onClick={closeMenu}
-                        className="flex items-center space-x-3 p-3 rounded-lg hover:bg-slate-800/50 transition-all duration-300 cursor-pointer hover:text-cyan-400"
+                        className="flex items-center text-slate-600 dark:text-slate-200 space-x-3 p-3 rounded-lg hover:bg-slate-800/50 transition-all duration-300 cursor-pointer hover:text-cyan-400"
                       >
                         <div className="w-2 h-2 bg-cyan-400 rounded-full"></div>
                         <span>Home</span>
@@ -255,7 +255,7 @@ export default function Navbar() {
                         to="About-Section"
                         {...scrollProps}
                         onClick={closeMenu}
-                        className="flex items-center space-x-3 p-3 rounded-lg hover:bg-slate-800/50 transition-all duration-300 cursor-pointer hover:text-cyan-400"
+                        className="flex items-center text-slate-600 dark:text-slate-200 space-x-3 p-3 rounded-lg hover:bg-slate-800/50 transition-all duration-300 cursor-pointer hover:text-cyan-400"
                       >
                         <div className="w-2 h-2 bg-cyan-400 rounded-full"></div>
                         <span>About</span>
@@ -266,7 +266,7 @@ export default function Navbar() {
                         to="Experience-Section"
                         {...scrollProps}
                         onClick={closeMenu}
-                        className="flex items-center space-x-3 p-3 rounded-lg hover:bg-slate-800/50 transition-all duration-300 cursor-pointer hover:text-cyan-400"
+                        className="flex items-center text-slate-600 dark:text-slate-200 space-x-3 p-3 rounded-lg hover:bg-slate-800/50 transition-all duration-300 cursor-pointer hover:text-cyan-400"
                       >
                         <div className="w-2 h-2 bg-cyan-400 rounded-full"></div>
                         <span>Experience</span>
@@ -277,7 +277,7 @@ export default function Navbar() {
                         to="Certificates-Section"
                         {...scrollProps}
                         onClick={closeMenu}
-                        className="flex items-center space-x-3 p-3 rounded-lg hover:bg-slate-800/50 transition-all duration-300 cursor-pointer hover:text-cyan-400"
+                        className="flex items-center text-slate-600 dark:text-slate-200 space-x-3 p-3 rounded-lg hover:bg-slate-800/50 transition-all duration-300 cursor-pointer hover:text-cyan-400"
                       >
                         <div className="w-2 h-2 bg-cyan-400 rounded-full"></div>
                         <span>Certificates</span>
@@ -289,7 +289,7 @@ export default function Navbar() {
                     <li>
                       <RouterLink
                         to={{ pathname: "/", hash: "#home" }}
-                        className="flex items-center space-x-3 p-3 rounded-lg hover:bg-slate-800/50 transition-all duration-300 cursor-pointer hover:text-cyan-400"
+                        className="flex items-center text-slate-600 dark:text-slate-200 space-x-3 p-3 rounded-lg hover:bg-slate-800/50 transition-all duration-300 cursor-pointer hover:text-cyan-400"
                         onClick={closeMenu}
                       >
                         <div className="w-2 h-2 bg-cyan-400 rounded-full"></div>
@@ -299,7 +299,7 @@ export default function Navbar() {
                     <li>
                       <RouterLink
                         to={{ pathname: "/", hash: "#About" }}
-                        className="flex items-center space-x-3 p-3 rounded-lg hover:bg-slate-800/50 transition-all duration-300 cursor-pointer hover:text-cyan-400"
+                        className="flex items-center text-slate-600 dark:text-slate-200 space-x-3 p-3 rounded-lg hover:bg-slate-800/50 transition-all duration-300 cursor-pointer hover:text-cyan-400"
                         onClick={closeMenu}
                       >
                         <div className="w-2 h-2 bg-cyan-400 rounded-full"></div>
@@ -309,7 +309,7 @@ export default function Navbar() {
                     <li>
                       <RouterLink
                         to={{ pathname: "/", hash: "#experience-section" }}
-                        className="flex items-center space-x-3 p-3 rounded-lg hover:bg-slate-800/50 transition-all duration-300 cursor-pointer hover:text-cyan-400"
+                        className="flex items-center text-slate-600 dark:text-slate-200 space-x-3 p-3 rounded-lg hover:bg-slate-800/50 transition-all duration-300 cursor-pointer hover:text-cyan-400"
                         onClick={closeMenu}
                       >
                         <div className="w-2 h-2 bg-cyan-400 rounded-full"></div>
@@ -319,7 +319,7 @@ export default function Navbar() {
                     <li>
                       <RouterLink
                         to={{ pathname: "/", hash: "#Certificate" }}
-                        className="flex items-center space-x-3 p-3 rounded-lg hover:bg-slate-800/50 transition-all duration-300 cursor-pointer hover:text-cyan-400"
+                        className="flex items-center text-slate-600 dark:text-slate-200 space-x-3 p-3 rounded-lg hover:bg-slate-800/50 transition-all duration-300 cursor-pointer hover:text-cyan-400"
                         onClick={closeMenu}
                       >
                         <div className="w-2 h-2 bg-cyan-400 rounded-full"></div>
@@ -331,7 +331,7 @@ export default function Navbar() {
                 <li className="pt-2 border-t border-slate-700">
                   <RouterLink
                     to="/projects"
-                    className="flex items-center space-x-3 p-3 rounded-lg bg-gradient-to-r from-slate-800 to-slate-700 hover:from-cyan-500/20 hover:to-blue-500/20 border border-slate-700 hover:border-cyan-500/50 transition-all duration-300 cursor-pointer hover:text-cyan-400"
+                    className="flex items-center text-slate-200 space-x-3 p-3 rounded-lg bg-gradient-to-r from-slate-800 to-slate-700 hover:from-cyan-500/20 hover:to-blue-500/20 border border-slate-700 hover:border-cyan-500/50 transition-all duration-300 cursor-pointer hover:text-cyan-400"
                     onClick={() => {
                       if (location.pathname === "/projects") {
                         window.scrollTo({ top: 0, behavior: "smooth" });

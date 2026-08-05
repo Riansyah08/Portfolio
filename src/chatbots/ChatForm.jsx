@@ -51,7 +51,7 @@ const Chatform = ({ chatHistory, setChatHistory, generateBotResponse }) => {
             disabled={!message.trim() || isLoading}
             className="flex-shrink-0 h-11 w-11 flex items-center justify-center
               bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 
-              disabled:from-slate-300 disabled:to-slate-400 dark:disabled:from-slate-600 dark:disabled:to-slate-700
+              disabled:from-slate-400 disabled:to-slate-500 dark:disabled:from-slate-600 dark:disabled:to-slate-700
               text-white rounded-xl transition-all duration-200 hover:shadow-lg
               disabled:cursor-not-allowed disabled:hover:shadow-none"
             >     

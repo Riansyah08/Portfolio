@@ -16,24 +16,54 @@ export default function Projects() {
       'React': 'bg-cyan-600 text-cyan-100',
       'CSS': 'bg-green-600 text-green-100',
       'Jupyter Notebook': 'bg-orange-600 text-orange-100',
-      'Android Studio': 'bg-red-600 text-red-100',
+      'Firebase': 'bg-red-600 text-red-100',
       'Laravel': 'bg-blue-700 text-blue-100',
       'Java': 'bg-orange-500 text-orange-100',
       'HTML': 'bg-green-700 text-green-100',
       'MySQL': 'bg-blue-800 text-blue-100',
-      'Arduino': 'bg-red-500 text-red-100',        
-      'C++': 'bg-indigo-600 text-indigo-100',      
+      'Arduino': 'bg-red-500 text-red-100',
+      'C++': 'bg-indigo-600 text-indigo-100',
       'Robotics': 'bg-emerald-600 text-emerald-100',
+
+      'OSB': 'bg-red-700 text-red-100',
+      'Coherence': 'bg-amber-600 text-amber-100',
+      'WebLogic': 'bg-rose-600 text-rose-100',
+
+      'K-Means': 'bg-purple-600 text-purple-100',
+      'Scikit-Learn': 'bg-orange-700 text-orange-100',
+      'Scikit-learn': 'bg-orange-700 text-orange-100',
+      'Clustering': 'bg-violet-600 text-violet-100',
+
+      'Detectron2': 'bg-pink-600 text-pink-100',
+      'Mask R-CNN': 'bg-fuchsia-600 text-fuchsia-100',
+      'Flask': 'bg-gray-800 text-gray-100',
+
+      'Machine Learning': 'bg-indigo-500 text-indigo-100',
+      'Regression': 'bg-blue-500 text-blue-100',
+      'Linear Regression': 'bg-sky-600 text-sky-100',
+
+      'PyTorch': 'bg-orange-800 text-orange-100',
+      'OpenCV': 'bg-lime-600 text-lime-100',
+      'CNN': 'bg-purple-800 text-purple-100',
+
+      'BERT': 'bg-teal-600 text-teal-100',
+      'RoBERTa': 'bg-cyan-700 text-cyan-100',
+      'FAISS': 'bg-sky-700 text-sky-100',
+
+      'Tkinter': 'bg-blue-500 text-blue-100',
+
       'default': 'bg-gray-600 text-gray-100'
     };
+
     return colors[tag] || colors.default;
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-50 via-white to-blue-50 dark:from-gray-900 dark:via-gray-800 dark:to-blue-900">
+    <div className="relative min-h-screen">
+    <div className="relative z-10">
       {/* Hero Section */}
       <div className="relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-r from-blue-600/10 to-purple-600/10"></div>
+        <div className="absolute inset-0"></div>
         <div className="relative px-4 pt-24 pb-16">
           <div className="max-w-4xl mx-auto text-center">
             <div className="inline-flex items-center gap-2 bg-blue-100 dark:bg-blue-900/30 text-blue-800 dark:text-blue-200 px-4 py-2 rounded-full text-sm font-medium mb-6">
@@ -63,13 +93,13 @@ export default function Projects() {
 
       {/* Projects Grid */}
       <div className="px-4 pb-20">
-        <div className="max-w-6xl mx-auto">
-          <div className="grid gap-8 md:gap-6">
+        <div className="max-w-7xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 md:gap-6">
             {projects.map((project, index) => (
               <article
                 key={index}
-                className={`group relative bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm border border-gray-200/50 dark:border-gray-700/50 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 overflow-hidden ${
-                  hoveredIndex === index ? 'scale-[1.02]' : ''
+                className={`group relative flex flex-col h-full bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm border border-gray-200/50 dark:border-gray-700/50 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 ${
+                  hoveredIndex === index ? '-translate-y-2' : ''
                 }`}
                 onMouseEnter={() => setHoveredIndex(index)}
                 onMouseLeave={() => setHoveredIndex(null)}
@@ -77,23 +107,26 @@ export default function Projects() {
                 {/* Gradient overlay */}
                 <div className="absolute inset-0 bg-gradient-to-br from-blue-500/5 to-purple-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                 
-                <div className="relative p-8">
+                <div className="relative p-6 flex flex-col h-full">
                   {/* Header */}
+                  {/* Project Image */}
+                  <div className="mb-5 overflow-hidden rounded-xl border border-gray-200 dark:border-gray-700">
+                    <img
+                      src={project.image}
+                      alt={project.title}
+                      className="w-full h-44 transition-transform duration-500 group-hover:scale-105"
+                    />
+                  </div>
+                  
                   <div className="flex items-start justify-between mb-6">
                     <div className="flex items-center gap-3">
                       <div className="p-3 bg-blue-100 dark:bg-blue-900/30 rounded-xl">
                         <Cpu className="w-6 h-6 text-blue-600 dark:text-blue-400" />
                       </div>
                       <div>
-                        <h2 className="text-2xl font-bold text-gray-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors duration-300">
+                        <h2 className="text-m font-bold text-gray-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors duration-300">
                           {project.title}
                         </h2>
-                        <div className="flex items-center gap-2 mt-1">
-                          <Database className="w-4 h-4 text-gray-400" />
-                          <span className="text-sm text-gray-500 dark:text-gray-400">
-                            Technical Project
-                          </span>
-                        </div>
                       </div>
                     </div>
                     
@@ -104,32 +137,27 @@ export default function Projects() {
                           href={project.github}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="p-2 bg-gray-900 dark:bg-gray-700 text-white rounded-lg hover:bg-gray-800 dark:hover:bg-gray-600 transition-colors duration-200 hover:scale-110 transform"
+                          className="flex items-center gap-2 text-sm font-medium text-blue-500 hover:text-blue-600 transition"
                           title="View Source Code"
                         >
-                          <Github className="w-5 h-5" />
+                          <Github className="w-7 h-7" />
                         </a>
                       )}
                     </div>
                   </div>
 
                   {/* Description */}
-                  <p className="text-gray-700 dark:text-gray-300 text-lg leading-relaxed mb-6">
+                  <p className="text-gray-700 dark:text-gray-300 text-sm leading-6 line-clamp-4">
                     {project.description}
                   </p>
 
                   {/* Technology Tags */}
-                  <div className="space-y-3">
-                    <div className="flex items-center gap-2">
-                      <span className="text-sm font-semibold text-gray-600 dark:text-gray-400">
-                        Technologies:
-                      </span>
-                    </div>
+                  <div className="mb-2 pt-2">
                     <div className="flex flex-wrap gap-2">
                       {project.tags.map((tag, idx) => (
                         <span
                           key={idx}
-                          className={`${getTagColor(tag)} px-4 py-2 rounded-full text-sm font-semibold shadow-sm hover:shadow-md transition-shadow duration-200 hover:scale-105 transform`}
+                          className={`${getTagColor(tag)} px-4 py-2 rounded-full text-sm font-semibold`}
                         >
                           {tag}
                         </span>
@@ -138,19 +166,18 @@ export default function Projects() {
                   </div>
 
                   {/* Links Footer */}
-                  <div className="flex items-center justify-between mt-8 pt-6 border-t border-gray-200/50 dark:border-gray-700/50">
-                    <div className="flex items-center gap-4 text-sm text-gray-500 dark:text-gray-400">
-                      {project.github && (
-                        <div className="flex items-center gap-1">
-                          <Github className="w-4 h-4" />
-                          <span>Open Source</span>
-                        </div>
-                      )}
-                    </div>
-                    
-                    <div className="text-sm text-gray-400 dark:text-gray-500">
-                      Project #{String(index + 1).padStart(2, '0')}
-                    </div>
+                  <div className="mt-auto pt-4 border-t border-gray-200 dark:border-gray-700 h-12 flex items-center">
+                    {project.demo && (
+                      <a
+                        href={project.demo}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center gap-2 text-sm font-medium text-blue-600 hover:text-blue-700"
+                      >
+                        <ExternalLink className="w-4 h-4" />
+                        Live Demo
+                      </a>
+                    )}
                   </div>
                 </div>
               </article>
@@ -170,10 +197,10 @@ export default function Projects() {
               I'm always excited to work on innovative projects and solve complex technical challenges.
             </p>
             <a
-              href="https://github.com/Riansyah08"
+              href="https://github.com/Riansyah08?tab=repositories"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 bg-white text-blue-600 px-6 py-3 rounded-lg font-semibold hover:bg-blue-50 transition-colors duration-200"
+              className="inline-flex items-center gap-2 bg-white text-blue-600 px-6 py-3 rounded-lg font-semibold hover:bg-green-300 transition-colors duration-200"
             >
               <Github className="w-5 h-5" />
               View More Projects
@@ -181,6 +208,7 @@ export default function Projects() {
           </div>
         </div>
       </div>
+    </div>
     </div>
   );
 }
